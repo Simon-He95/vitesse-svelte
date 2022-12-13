@@ -1,0 +1,61 @@
+{
+  "name": "vitesse",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@7.6.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git + git@github.com:Simon-He95/vitesse.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Simon-He95/vitesse/issues"
+  },
+  "keywords": [
+    "vitesse",
+    "svelte"
+  ],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "postinstall": "simple-git-hooks",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "format": "prettier --write --cache .",
+    "lint": "eslint . --ext .vue,.js,.ts,.jsx,.tsx,.md,.json --max-warnings 0 --cache",
+    "lint:fix": "pnpm run lint --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^0.25.2",
+    "@iconify-json/logos": "^1.1.19",
+    "@sveltejs/vite-plugin-svelte": "^2.0.1",
+    "@tsconfig/svelte": "^3.0.0",
+    "bumpp": "^8.2.1",
+    "eslint": "^8.20.0",
+    "lint-staged": "^13.1.0",
+    "prettier": "^2.8.1",
+    "simple-git-hooks": "^2.8.1",
+    "svelte": "^3.54.0",
+    "svelte-check": "^2.10.2",
+    "svelte-preprocess": "^5.0.0",
+    "tslib": "^2.4.1",
+    "tsx": "^3.12.1",
+    "typescript": "^4.9.4",
+    "unocss": "^0.47.6",
+    "vite": "^4.0.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm exec lint-staged --concurrent false",
+    "commit-msg": "pnpm exec tsx scripts/verifyCommit.ts $1"
+  },
+  "lint-staged": {
+    "*": [
+      "prettier --write --cache --ignore-unknown"
+    ],
+    "*.{vue,js,ts,jsx,tsx,md,json}": "eslint --fix"
+  },
+  "eslintConfig": {
+    "extends": "@antfu"
+  }
+}
