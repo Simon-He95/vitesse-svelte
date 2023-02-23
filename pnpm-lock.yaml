@@ -8,7 +8,7 @@ importers:
       '@iconify-json/logos': ^1.1.19
       '@sveltejs/vite-plugin-svelte': ^2.0.1
       '@tsconfig/svelte': ^3.0.0
-      bumpp: ^8.2.1
+      bumpp: ^9.0.0
       eslint: ^8.20.0
       lint-staged: ^13.1.0
       prettier: ^2.8.1
@@ -26,7 +26,7 @@ importers:
       '@iconify-json/logos': 1.1.19
       '@sveltejs/vite-plugin-svelte': 2.0.2_svelte@3.54.0+vite@4.0.1
       '@tsconfig/svelte': 3.0.0
-      bumpp: 8.2.1
+      bumpp: 9.0.0
       eslint: 8.29.0
       lint-staged: 13.1.0
       prettier: 2.8.1
@@ -1086,15 +1086,14 @@ packages:
       semver: 7.3.8
     dev: true
 
-  /bumpp/8.2.1:
-    resolution: {integrity: sha512-4tHKsWC2mqHQvdjZ4AXgVhS2xMsz8qQ4zYt87vGRXW5tqAjrYa/UJqy7s/dGYI2OIe9ghBdiFhKpyKEX9SXffg==}
+  /bumpp/9.0.0:
+    resolution: {integrity: sha512-I2+JLFQin46NioHg6wi23hYQMVExiJyGblARp5fIHUzLv3rRz9me38eUe2xlQCAl7Ys9X+SlhTaIkttTxiL6cQ==}
     engines: {node: '>=10'}
     hasBin: true
     dependencies:
       '@jsdevtools/ez-spawn': 3.0.4
       cac: 6.7.14
       fast-glob: 3.2.12
-      kleur: 4.1.5
       prompts: 2.4.2
       semver: 7.3.8
     dev: true
