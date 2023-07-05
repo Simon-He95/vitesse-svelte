@@ -11,7 +11,7 @@ importers:
       bumpp: ^8.2.1
       eslint: ^8.20.0
       lint-staged: ^13.1.0
-      prettier: ^2.8.1
+      prettier: ^3.0.0
       simple-git-hooks: ^2.8.1
       svelte: ^3.54.0
       svelte-check: ^3.0.0
@@ -29,7 +29,7 @@ importers:
       bumpp: 8.2.1
       eslint: 8.29.0
       lint-staged: 13.1.0
-      prettier: 2.8.1
+      prettier: 3.0.0
       simple-git-hooks: 2.8.1
       svelte: 3.54.0
       svelte-check: 3.0.0_svelte@3.54.0
@@ -3137,9 +3137,9 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
-  /prettier/2.8.1:
-    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
-    engines: {node: '>=10.13.0'}
+  /prettier/3.0.0:
+    resolution: {integrity: sha512-zBf5eHpwHOGPC47h0zrPyNn+eAEIdEzfywMoYn2XPi0P44Zp0tSq64rq0xAREh4auw2cJZHo9QUob+NqCQky4g==}
+    engines: {node: '>=14'}
     hasBin: true
     dev: true
 
